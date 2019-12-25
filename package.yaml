@@ -1,0 +1,17 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: 'lambda-dynamo
+
+  Sample SAM Template for lambda-dynamo
+
+  '
+Globals:
+  Function:
+    Timeout: 3
+Resources:
+  postUser:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://random-bucket-317/231551bf239176ffbe8077a5ef4ee49c
+      Handler: app.handler
+      Runtime: nodejs8.10
