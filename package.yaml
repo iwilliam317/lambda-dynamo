@@ -9,9 +9,15 @@ Globals:
   Function:
     Timeout: 3
 Resources:
+  getUsers:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: s3://random-bucket-317/0c4cc33d677da912ac62e76665e0938c
+      Handler: getUsers.handler
+      Runtime: nodejs8.10
   postUser:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://random-bucket-317/231551bf239176ffbe8077a5ef4ee49c
+      CodeUri: s3://random-bucket-317/0c4cc33d677da912ac62e76665e0938c
       Handler: app.handler
       Runtime: nodejs8.10
