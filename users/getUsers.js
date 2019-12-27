@@ -12,6 +12,7 @@ exports.handler = async (event, context, callback) => {
         
         const response = {
             statusCode: 200,
+            quantity: items.length || [],
             items
         }
         callback(null, response)

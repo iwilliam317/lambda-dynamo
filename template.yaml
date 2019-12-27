@@ -17,9 +17,17 @@ Resources:
       CodeUri: users/
       Handler: getUsers.handler
       Runtime: nodejs8.10
+
+  deleteUsers:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: users/
+      Handler: deleteUsers.handler
+      Runtime: nodejs8.10
+
   postUser:
     Type: AWS::Serverless::Function # More info about Function Resource: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
     Properties:
       CodeUri: users/
-      Handler: app.handler
+      Handler: postUser.handler
       Runtime: nodejs8.10
