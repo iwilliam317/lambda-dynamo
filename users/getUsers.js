@@ -1,6 +1,4 @@
-const AWS = require('aws-sdk')
-AWS.config.update({region: 'eu-west-1'})
-const dynamo = new AWS.DynamoDB.DocumentClient()
+const {dynamo} = require('./config')
 
 exports.handler = async (event, context, callback) => {
     const params = {TableName: 'users'}
