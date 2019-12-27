@@ -90,10 +90,10 @@ The SAM CLI reads the application template to determine the API's routes and the
 
 ```yaml
       Events:
-        HelloWorld:
+        Users:
           Type: Api
           Properties:
-            Path: /hello
+            Path: /users
             Method: get
 ```
 
@@ -111,10 +111,6 @@ lambda-dynamo$ sam logs -n HelloWorldFunction --stack-name lambda-dynamo --tail
 ```
 
 You can find more information and examples about filtering Lambda function logs in the [SAM CLI Documentation](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-logging.html).
-
-## Unit tests
-
-Tests are defined in the `hello-world/tests` folder in this project. Use NPM to install the [Mocha test framework](https://mochajs.org/) and run unit tests.
 
 ```bash
 lambda-dynamo$ cd users
