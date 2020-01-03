@@ -1,8 +1,6 @@
 {
   "params": {
-    "user_id": "1",
     "name": "William",
-    "email": "willshinji@gmail.com"
-  },
-  "table": "mytable"
+    "email": "william@email.com"
+  }
 }

@@ -2,10 +2,10 @@ const {dynamo} = require('./config')
 
 exports.handler = async (event, context, callback) => {
     try {
-
-        const items = await dynamo.scan({TableName: 'users'}).promise()
+        const TableName = 'users'
+        const items = await dynamo.scan({TableName}).promise()
         items.Items.forEach(async (item) => {
-            dynamo.delete({TableName: 'users', Key: {
+            dynamo.delete({TableName, Key: {
                 'user_id': `${item.user_id}`
               }}, function(err, data) {
                 if (err) console.log(err);
