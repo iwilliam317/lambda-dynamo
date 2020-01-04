@@ -6,7 +6,6 @@ exports.handler = async (event, context, callback) => {
     try {
         const res = await dynamo.scan(params).promise()
         const items = res.Items.map(item => item) 
-        console.log('adasd');
         
         const response = {
             statusCode: 200,
