@@ -12,18 +12,18 @@ Resources:
   getUsers:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://random-bucket-317/0fa47cc865616bec2ecedc8917fca181
+      CodeUri: s3://random-bucket-317/2d1cb978ecf223c315d389f09d362d92
       Handler: getUsers.handler
       Runtime: nodejs8.10
   deleteUsers:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://random-bucket-317/0fa47cc865616bec2ecedc8917fca181
+      CodeUri: s3://random-bucket-317/2d1cb978ecf223c315d389f09d362d92
       Handler: deleteUsers.handler
       Runtime: nodejs8.10
   postUser:
     Type: AWS::Serverless::Function
     Properties:
-      CodeUri: s3://random-bucket-317/0fa47cc865616bec2ecedc8917fca181
+      CodeUri: s3://random-bucket-317/2d1cb978ecf223c315d389f09d362d92
       Handler: postUser.handler
       Runtime: nodejs8.10

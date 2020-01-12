@@ -18,6 +18,13 @@ Resources:
       Handler: getUsers.handler
       Runtime: nodejs8.10
 
+  queryUser:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: users/
+      Handler: queryUser.handler
+      Runtime: nodejs8.10
+
   deleteUsers:
     Type: AWS::Serverless::Function
     Properties:
